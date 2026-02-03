@@ -208,25 +208,6 @@ The main entry point and orchestrator for the entire crawler.
 - `-b:0|1`: Save torrent files (1) or not (0).
 - `-h`: Show help.
 
-#### Example: Main Process Flow
-
-```mermaid
-flowchart TD
-  Start[Start dht_spider.py]
-  ParseArgs[Parse CLI Args]
-  Fork[Watcher Forks Child]
-  Main[Main Process]
-  Logger[Logger Setup]
-  Master[Master Thread]
-  DHT[DHTProcess Thread]
-  Loop[Wait (signal.pause)]
-
-  Start --> ParseArgs --> Fork --> Main
-  Main --> Logger --> Master
-  Main --> DHT --> Loop
-  DHT -->|Announce/Peers| Master
-```
-
 ---
 
 ### `dump_torrent.py`
