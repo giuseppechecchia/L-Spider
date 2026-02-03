@@ -19,7 +19,7 @@ dist/
 *.log
 
 # Docs
-docs/
+docs/*.lmm
 
 # Runtime / mutable state
 state/
