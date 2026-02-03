@@ -109,21 +109,6 @@ Contains two main classes:
 - Uses semaphores for concurrency control.
 - Offers methods to enqueue download jobs and log infohash discoveries.
 
-#### Diagram: Master Process and PeerStore
-
-```mermaid
-flowchart TD
-  DHTProcess[DHTProcess - finds infohash + peer]
-  Master[Master Thread]
-  MetadataPeerStore[MetadataPeerStore - stores good peers]
-  Worker[Download Metadata Worker(s)]
-  
-  DHTProcess -->|log_infohash| Master
-  Master -->|enqueue jobs| Worker
-  Worker -->|mark ok| MetadataPeerStore
-  Master --> MetadataPeerStore
-```
-
 ---
 
 ### `bt_metadata.py`
