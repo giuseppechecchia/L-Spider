@@ -322,23 +322,6 @@ There are **no HTTP API endpoints** exposed by this project; it operates as a CL
 
 ---
 
-## Data Flow and Architecture
-
-The system consists of several cooperating threads and persistent stores:
-
-```mermaid
-flowchart TD
-  DHT[DHTProcess] -- Infohash/Peer --> Master[Master Thread]
-  Master -- Metadata Download --> Worker[Download Metadata Worker(s)]
-  Worker -- Store --> Storage[Filesystem/Logs/BT Folder]
-  Master -- Good Peer --> PeerStore[MetadataPeerStore]
-  DHT -- Bootstrap Peers --> BootstrapStore[DHTBootstrapStore]
-  CLI[User CLI Options] --> DHT
-  CLI --> Master
-```
-
----
-
 ## Key Takeaways
 
 ```card
