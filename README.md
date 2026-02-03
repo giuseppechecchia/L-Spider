@@ -7,7 +7,7 @@ When you obtain a magnet link or a torrent file, you should add one of them to a
 ## Principle
 
 DHT Network theory and how to make a DHT Spider  
-https://lexuge.github.io/jekyll/update/2017/07/22/DHT%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EDHT%E7%88%AC%E8%99%AB%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97
+https://web.archive.org/web/20190528065659/https://lexuge.github.io/jekyll/update/2017/07/22/DHT%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EDHT%E7%88%AC%E8%99%AB%E7%BC%96%E5%86%99%E6%8C%87%E5%8D%97.html
 
 ## Thanks
 
@@ -19,10 +19,6 @@ Additional references and related projects:
 Kademlia, DHT, KRPC, BitTorrent Protocol, DHT Sniffer  
 http://www.cnblogs.com/LittleHann/p/6180296.html  
 (Referenced the implementation of BEP_0009 and corrected and improved errors)
-
-simDHT  
-https://github.com/fanpei91/simDHT  
-(Referenced the implementation of get_peer, find_node, and announce_peer, refactored and extended with multithreading)
 
 ## License
 
